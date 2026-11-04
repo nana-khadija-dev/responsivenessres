@@ -4,220 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Gulli Bliss - Enjoy delicious traditional Hausa gullisuwa, freshly prepared with love.">
-    <title>Gulli Bliss | Traditional Hausa Snacks</title>
+    <title>Khadija | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header -->
     <header class="header">
-        <a href="#home" class="logo">Gulli<span>Bliss.</span></a>
+        <a href="#home" class="logo">Khadija<span>.</span></a>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Our Menu</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
-        <a href="#menu" class="header-button">Order Now</a>
+        <button class="theme-button" id="theme-button" aria-label="Toggle dark mode">
+            🌙
+        </button>
+
+        <button class="menu-button" id="menu-button" aria-label="Open menu">
+            ☰
+        </button>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="eyebrow">A TASTE OF HAUSA TRADITION</p>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="intro">HELLO, I'M</p>
+                <h1>Khadija <span>Frontend Developer</span></h1>
+                <p class="hero-description">
+                    I create beautiful, responsive, and user-friendly websites
+                    using HTML, CSS, and JavaScript.
+                </p>
 
-            <h1>Freshly Made.<br><span>Lovingly Shared.</span></h1>
-
-            <p class="hero-description">
-                Enjoy the delicious taste of traditional Hausa gullisuwa,
-                prepared with care, quality ingredients, and a little
-                extra love in every bite.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#menu" class="btn primary-btn">Explore Our Menu</a>
-                <a href="#about" class="btn secondary-btn">Our Story</a>
-            </div>
-
-            <div class="hero-note">
-                <span>✦</span>
-                Fresh • Delicious • Traditional
-            </div>
-        </div>
-
-
-
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80"
-                alt="Freshly made traditional snacks">
-
-            <div class="image-badge">
-                <span>Made with</span>
-                <strong>❤️ Love</strong>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="feature">
-            <span class="feature-icon">🌾</span>
-            <div>
-                <h3>Quality Ingredients</h3>
-                <p>Carefully selected ingredients</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <span class="feature-icon">🥣</span>
-            <div>
-                <h3>Traditional Recipe</h3>
-                <p>A taste inspired by our culture</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <span class="feature-icon">💛</span>
-            <div>
-                <h3>Made with Love</h3>
-                <p>Prepared with care and passion</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about section" id="about">
-        <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85"
-                alt="Delicious freshly prepared baked treats">
-        </div>
-
-        <div class="about-content">
-            <p class="eyebrow">WELCOME TO GULLI BLISS</p>
-            <h2>Keeping Our Tradition <span>Delicious.</span></h2>
-
-            <p>
-                Gulli Bliss celebrates the wonderful taste of traditional
-                Hausa gullisuwa. We believe that good snacks bring people
-                together and create beautiful memories.
-            </p>
-
-            <p>
-                Our goal is to share delicious treats inspired by our
-                culture, prepared with care, and enjoyed by everyone.
-            </p>
-
-            <a href="#menu" class="text-link">Discover Our Menu →</a>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section class="menu section" id="menu">
-        <div class="section-heading">
-            <p class="eyebrow">TASTY MOMENTS</p>
-            <h2>Explore Our <span>Menu</span></h2>
-            <p>Delicious treats for your everyday moments.</p>
-        </div>
-
-        <div class="menu-grid">
-            <article class="menu-card">
-                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=700&q=85"
-                    alt="Fresh cookies">
-                <div class="menu-card-content">
-                    <span class="menu-category">TRADITIONAL SNACK</span>
-                    <h3>Classic Gullisuwa</h3>
-                    <p>A delightful traditional treat for every occasion.</p>
-                    <a href="#contact" class="order-link">Ask About This →</a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
-            </article>
-
-            <article class="menu-card">
-                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=85"
-                    alt="Sweet homemade snacks">
-                <div class="menu-card-content">
-                    <span class="menu-category">SWEET TREATS</span>
-                    <h3>Sweet Bliss</h3>
-                    <p>A sweet and tasty choice to brighten your day.</p>
-                    <a href="#contact" class="order-link">Ask About This →</a>
-                </div>
-            </article>
-
-            <article class="menu-card">
-                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85"
-                    alt="Chocolate baked treats">
-                <div class="menu-card-content">
-                    <span class="menu-category">SPECIAL TREATS</span>
-                    <h3>Bliss Special</h3>
-                    <p>A special snack for sharing with family and friends.</p>
-                    <a href="#contact" class="order-link">Ask About This →</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery section" id="gallery">
-        <div class="section-heading">
-            <p class="eyebrow">A LITTLE TASTE OF BLISS</p>
-            <h2>Our <span>Gallery</span></h2>
-        </div>
-
-        <div class="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=85"
-                alt="Snack gallery image 1">
-            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=85"
-                alt="Snack gallery image 2">
-            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484f3?auto=format&fit=crop&w=600&q=85"
-                alt="Snack gallery image 3">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=85"
-                alt="Snack gallery image 4">
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-        <div class="contact-content">
-            <p class="eyebrow">LET'S SHARE SOME BLISS</p>
-            <h2>Have a Question or Want to <span>Order?</span></h2>
-            <p>
-                We would love to hear from you. Contact us to ask about
-                our snacks, prices, and orders.
-            </p>
-
-            <div class="contact-details">
-                <p>📧 Email: gullibliss@example.com</p>
-                <p>📍 Location: Nigeria</p>
             </div>
-        </div>
+            <div class="hero-image">
+                <div class="image-circle">
+                    <span>💻</span>
+                </div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn primary-btn">Send Message</button>
-        </form>
-    </section>
+                <img src="images/Nana.jpeg" alt="Khadija working on a computer" class="profile-photo">
 
-    <!-- Footer -->
+                <div class="floating-card">✨ Creative Developer</div>
+
+            </div>
+        
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <span class="about-icon">👩‍💻</span>
+                    <h3>Who Am I?</h3>
+                    <p>
+                        My name is Khadija. I am a beginner frontend developer
+                        who enjoys learning how to build websites.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-icon">🎯</span>
+                    <h3>My Goal</h3>
+                    <p>
+                        My goal is to become a skilled developer and create
+                        useful websites that solve real problems.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-icon">📚</span>
+                    <h3>What I Enjoy</h3>
+                    <p>
+                        I enjoy learning new skills, reading, designing,
+                        and improving my coding projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="section-heading">
+                <p class="section-label">WHAT I CAN DO</p>
+                <h2>My <span>Skills</span></h2>
+            </div>
+
+            <div class="skills-content">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress html-progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress css-progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress js-progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Responsive Design</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress responsive-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="section-heading">
+                <p class="section-label">MY RECENT WORK</p>
+                <h2>Featured <span>Projects</span></h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image furni-image">
+                        <span>🛋️</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 01</p>
+                        <h3>FurniStore</h3>
+                        <p>
+                            A modern furniture website showcasing beautiful
+                            furniture and interior designs.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image gulli-image">
+                        <span>🍪</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 02</p>
+                        <h3>Gulli Bliss</h3>
+                        <p>
+                            A lovely website concept for a traditional
+                            Hausa snack brand.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image portfolio-image">
+                        <span>✨</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 03</p>
+                        <h3>My Portfolio</h3>
+                        <p>
+                            My personal portfolio where I share my skills,
+                            learning journey, and projects.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="section-heading">
+                <p class="section-label">LET'S CONNECT</p>
+                <h2>Contact <span>Me</span></h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h3>Have a project in mind?</h3>
+                    <p>
+                        I would love to hear from you. Send me a message
+                        and let's create something amazing!
+                    </p>
+
+                    <div class="contact-detail">
+                        <span>📧</span>
+                        <p>Email: khadija@example.com</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span>🌍</span>
+                        <p>Location: Nigeria</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <p id="form-response"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <a href="#home" class="logo">Gulli<span>Bliss.</span></a>
-        <p>Celebrating the delicious taste of Hausa tradition.</p>
-
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <p class="copyright">© 2026 Gulli Bliss. All rights reserved.</p>
+        <a href="#home" class="logo">Khadija<span>.</span></a>
+        <p>Designed and built with ❤️ by Khadija</p>
+        <p class="copyright">© 2026 Khadija. All rights reserved.</p>
     </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
 
 </body>
 
